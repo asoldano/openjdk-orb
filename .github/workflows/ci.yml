@@ -18,7 +18,7 @@ jobs:
       matrix:
         os: [ubuntu-latest]
 #        jdk-distribution: [zulu, adopt-openj9]
-        jdk-version: [8]
+        jdk-version: [1.8.0_41]
     steps:
     - name: Configure runner - Linux
       if: contains(matrix.os, 'ubuntu')
