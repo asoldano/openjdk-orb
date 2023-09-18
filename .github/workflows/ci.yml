@@ -36,7 +36,7 @@ jobs:
     - name: Set up JDK ${{ matrix.jdk-version }}
       uses: actions/setup-java@v1
       with:
-#        distribution: ${{ matrix.jdk-distribution }}
+#        distribution: 'oracle'
         java-version: ${{ matrix.jdk-version }}
     - name: Run Tests
       run: mvn -ntp -U -B -fae clean install
