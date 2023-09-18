@@ -16,7 +16,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]
-        jdk-distribution: [oracle, adopt]
+        jdk-distribution: [zulu, adopt-openj9]
         jdk-version: [8]
     steps:
     - name: Configure runner - Linux
