@@ -36,10 +36,10 @@ jobs:
     - name: Set up JDK ${{ matrix.jdk-version }}
       uses: actions/setup-java@v1
       with:
-#        distribution: 'oracle'
+        distribution: 'oracle'
         java-version: ${{ matrix.jdk-version }}
     - name: Run Tests
-      run: mvn -ntp -U -B -fae clean install
+      run: java -version; mvn -ntp -U -B -fae clean install
     - uses: actions/upload-artifact@v3
       if: failure()
       with:
